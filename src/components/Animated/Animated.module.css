@@ -1,0 +1,44 @@
+.leaf {
+  animation: ani_leaf .8s ease-in-out;
+  z-index: 0;
+  position: absolute;
+  transform: rotate(-20deg);
+  width: 600px;
+  top: -90px;
+  left: -150px;
+}
+
+      .leaf2 {
+        animation: ani_leaf2 .8s ease-in-out;
+        z-index: 0;
+        position: absolute;
+        transform: rotate(-25deg);
+        width: 500px;
+        top: -50px;
+        right: -150px;
+      }
+
+@keyframes ani_leaf {
+  0% {
+    opacity: 0;
+    transform: rotate(50deg);
+  }
+  50% {
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
+}
+@keyframes ani_leaf2 {
+  0% {
+    opacity: 0;
+    transform: rotate(-70deg);
+  }
+  50% {
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
+}

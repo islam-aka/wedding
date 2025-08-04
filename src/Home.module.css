@@ -1,0 +1,482 @@
+@import url('./assets/fontKudryavtsev/Kudryashev\ Display\ font/stylesheet.css');
+
+.container {
+  display: block;
+  overflow: hidden;
+  .web {
+    @media all and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .title {
+    margin-top: 16px;
+    font-family: 'Kudryashev Headline';
+    font-size: 48px;
+    text-align: center;
+    line-height: 120%;
+  }
+
+  .mobile {
+    display: none;
+
+    @media all and (max-width: 480px) {
+      display: block;
+    }
+
+    .imgOne {
+      width: 100%;
+    }
+
+    .info {
+      width: 52%;
+      margin: -30px auto 0;
+      text-align: center;
+
+      .month {
+        margin-bottom: 12px;
+      }
+
+      .day {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 12px;
+
+        p {
+          font-size: 48px;
+          line-height: 50%;
+          color: #c6ad78;
+        }
+
+        div {
+          width: 100px;
+          border-top: 1px solid #c6ad78;
+          border-bottom: 1px solid #c6ad78;
+        }
+      }
+    }
+
+    .blockTwo {
+      position: relative;
+      margin-top: 32px;
+      text-align: center;
+
+      p {
+        font-family: "Lora", serif;
+        margin-top: 28px;
+      }
+
+      .love {
+        color: #c6ad78;
+        font-size: 16px;
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .heart {
+        animation: ani_heart .8s ease-in-out;
+        width: 64px;
+        margin-top: 6px;
+      }
+
+      .sound {
+        position: relative;
+        z-index: 5;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #67734C;
+        margin: 12px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 30px;
+        }
+      }
+
+      .leaf {
+        z-index: 0;
+        position: absolute;
+        transform: rotate(-20deg);
+        width: 600px;
+        top: -90px;
+        left: -150px;
+      }
+
+      .leaf2 {
+        z-index: 0;
+        position: absolute;
+        transform: rotate(-25deg);
+        width: 500px;
+        top: -120px;
+        right: -150px;
+      }
+
+      .infos {
+        margin-top: 20px;
+        font-family: "Lora", serif;
+
+        p:first-child {
+          margin: 0 0 12px 0;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .bottom {
+
+        .rouse {
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          top: 550px;
+          left: 0;
+
+          img:first-child {
+            width: 170px;
+            position: absolute;
+            top: 20px;
+            left: -10px;
+            transform: rotate(-10deg);
+          }
+        }
+
+        .rouse2 {
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          top: 550px;
+          right: 0;
+
+          img:first-child {
+            width: 170px;
+            position: absolute;
+            top: 40px;
+            right: -30px;
+            transform: rotate(26deg);
+          }
+        }
+      }
+    }
+
+    .blockThree {
+      display: grid;
+      justify-content: center;
+      padding-top: 40px;
+      text-align: center;
+      .frame {
+        margin: 0 auto;
+        width: 100px;
+        margin-left: 2px;
+      }
+      .blockThree__title {
+        font-family: "Lora", serif;
+        font-size: 22px;
+      }
+      .blockThree__subtitle {
+        font-family: "Lora", serif;
+        font-size: 16px;
+        margin-top: 4px;
+      }
+      .btn {
+        cursor: pointer;
+        background-color: #67734C;
+        border-radius: 12px;
+        border: 1px solid #67734C;
+        padding: 12px 16px;
+        color: white;
+        margin-top: 24px;
+        font-size: 16px;
+      }
+      .farm {
+        margin: 24px auto 12px;
+        width: 350px;
+        height: 200px;
+        overflow: hidden;
+        svg {
+          margin-top: -150px;
+          width: 350px;
+        }
+      }
+      .text {
+        font-family: "Lora", serif;
+        max-width: 290px;
+        width: 100%;
+        margin: 0 auto;
+        .text1 {
+          font-size: 18px;
+        }
+        .text2 {
+          font-size: 22px;
+          margin: 6px 0 12px;
+        }
+      }
+    }
+    .blockFour {
+      text-align: center;
+      .rouse4 {
+        margin-top: 24px;
+        overflow: hidden;
+        height: 200px;
+        img {
+          margin-top: -50px;
+          width: 230px;
+          transform: rotate(-15deg);
+        }
+      }
+      .mark {
+        margin-top: 24px;
+        svg {
+          width: 50px;
+          fill: #C6AD78;
+        }
+      }
+      .text4 {
+        text-align: center;
+        margin-top: 10px;
+        display: grid;
+        gap: 8px;
+      }
+      .blockFour__bottom {
+        position: relative;
+        .rouse8 {
+          text-align: start;
+          position: absolute;
+          top: -60px;
+          img {
+            width: 180px;
+            margin-left: -42px;
+          }
+        }
+        .rouse9 {
+          position: absolute;
+          right: 0;
+          top: 0px;
+          img {
+            width: 120px;
+          }
+        }
+        .heart2 {
+          width: 50px;
+        }
+      }
+    }
+    .blockFive {
+      margin-top: 36px;
+      text-align: center;
+      position: relative;
+      .blockFive__top {
+        text-align: center;
+        .blockFive__title {
+          font-family: "Lora", serif;
+          font-size: 22px;
+          margin-top: 24px;
+        }
+        .blockFive_subtitle {
+          margin-top: 8px;
+        }
+        .blockFive_text {
+          margin-top: 8px;
+        }
+        .heart2 {
+          margin-top: 6px;
+          width: 60px;
+        }
+      }
+      .rouse10 {
+        transform: rotate(-40deg);
+        position: absolute;
+        right: -40px;
+        top: 60px;
+        img {
+          width: 160px;
+        }
+      }
+      .rouse11 {
+        position: absolute;
+        left: -30px;
+        bottom: 120px;
+
+        img {
+          transform: rotate(40deg);
+          width: 120px;
+        }
+      }
+      .text5 {
+        margin-top: 60px;
+        font-size: 16px;
+      }
+      .envelope {
+        img {
+          width: 70px;
+        }
+      }
+      .leaf3 {
+        position: absolute;
+        transform: rotate(30deg);
+        right: 0px;
+        bottom: -10px;
+        img {
+          width: 110px;
+        }
+      }
+    }
+    .forms {
+      margin-top: 32px;
+      .forms__title {
+        text-align: center;
+        margin-bottom: 2px;
+      }
+      .forms__subtitle {
+        text-align: center;
+      }
+      .form {
+        width: 70%;
+        margin: 32px auto 0;
+        .name {
+          margin-bottom: 32px;
+          input {
+            margin-top: 8px;
+            width: 100%;
+            background: transparent;
+            border: 2px solid #C6AD78;
+            outline: none;
+            padding: 8px 4px;
+            font-size: 16px;
+            border-radius: 6px;
+          }
+        }
+        .transfer {
+          margin-top: 18px;
+        }
+        .presence, .transfer {
+          display: grid;
+          gap: 12px;
+          div {
+            display: flex;
+            gap: 4px;
+          }
+          input[type="radio"]{
+            accent-color: #000;
+          }
+        }
+        .btn {
+          width: 116.7px;
+          margin: 0 auto;
+          button {
+            cursor: pointer;
+            background-color: #67734C;
+            border-radius: 12px;
+            border: 1px solid #67734C;
+            padding: 12px 16px;
+            color: white;
+            margin-top: 24px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .done {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      height: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 50;
+      background-color: #00000064;
+      div {
+        width: 80%;
+        height: 40vh;
+        background: #ecdb89;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+    }
+    .footer {
+      margin-top: 32px;
+      text-align: center;
+      img {
+        width: 100%;
+        margin-bottom: -8px;
+      }
+      h3 {
+        margin: 22px 0;
+      }
+      .text7 {
+        margin-bottom: -370px;
+        div {
+          cursor: pointer;
+          border: 1px solid #000;
+          border-radius: 22px;
+          width: 180px;
+          padding: 8px 0;
+          margin: 12px auto;
+        }
+      }
+    }
+  }
+}
+
+@keyframes ani_heart {
+  0% {
+    opacity: 0;
+    margin-top: 40px;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 10px;
+  }
+}
+
+@keyframes ani_leaf {
+  0% {
+    opacity: 0;
+    transform: rotate(50deg);
+  }
+
+  50% {}
+
+  100% {
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes ani_leaf2 {
+  0% {
+    opacity: 0;
+    transform: rotate(-70deg);
+  }
+
+  50% {}
+
+  100% {
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
+}
+.line {
+  width: 1px;
+  height: 150px;
+  background-color: black;
+  margin: 26px auto 0;
+  border-radius: 12px;
+}
