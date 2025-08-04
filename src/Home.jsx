@@ -101,7 +101,7 @@ const Home = () => {
               <p>22</p>
               <div><span>17:00</span></div>
             </div>
-            <p>2024</p>
+            <p>2025</p>
           </div>
           <p className={cls.title}>Александр<br/>& <br/>Екатерина</p>
         </div>
